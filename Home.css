@@ -7,6 +7,9 @@
 body::-webkit-scrollbar{
     display: none;
 }
+.viewAll{
+    cursor: pointer;
+}
 .section-0{
     padding-top: 10%;
 }
@@ -67,7 +70,7 @@ body::-webkit-scrollbar{
   }
   .fade {
     animation-name: fade;
-    animation-duration: 1s;
+    animation-duration: 2s;
   }
   
   @keyframes fade {
@@ -75,7 +78,87 @@ body::-webkit-scrollbar{
     to {opacity: 1}
   }
   .mySlides {display: none;}
-
+.section-testing{
+    display: none;
+}
+.sec-book{
+    display: none;
+    padding-top: 10%;
+}
+.back{
+    cursor: pointer;
+}
+.sec-about{
+    display: none;
+    padding-top: 7% ;
+}
+.sec-contact{
+    display: none;
+    padding-top: 7% ;
+}
+.sec-TandC{
+    display: none;
+    padding-top: 7% ;
+}
+.sec-SoftCopy{
+    display: none;
+    padding-top: 7% ;
+}
+.contact-col{
+        margin: 2%;
+        background-color: rgb(253, 253, 253);
+        padding-top: 2%;
+        border-radius: 5%;
+        box-shadow: 2px 5px 20px rgba(35, 65, 35, 0.3);    
+}
+.SoftCopy-col{
+        margin: 2%;
+        background-color: rgb(253, 253, 253);
+        padding-top: 2%;
+        box-shadow: 2px 5px 20px rgba(35, 65, 35, 0.3);    
+}
+.SoftCopy-Book{
+    width: 15vw;
+    height: 50vh;
+}
+.card{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    max-width: 30vw;
+    margin-bottom: 10%;
+    padding-bottom: 3%;
+    display: none;
+    img{
+        display: flex;
+        margin: auto;
+        width: 30%;
+    }
+}
+.sec-Account{
+    display: none;
+    padding-top: 7%;
+}
+.account-menu{
+    /* float: left; */
+    margin-bottom: 20%;
+    ul{
+        /* box-shadow: 2px 5px 20px rgba(35, 65, 35, 0.3); */
+        float: left;
+        width: 20%;
+        padding-left: 0 ;
+    }
+    li{
+        list-style-type: none;
+        padding: 10px;
+        /* box-shadow: 2px 5px 20px rgba(35, 65, 35, 0.3); */
+        
+    }
+    li:hover{
+        background: linear-gradient(to right, rgb(210, 111, 111),red);
+        color: white;
+    }
+}
 @media only screen and (max-width:430px)and (max-height:932px){
     .section-1{
         flex-direction: column;
@@ -108,5 +191,45 @@ body::-webkit-scrollbar{
         .sec-2-address{
             text-align: center;
         }
+    }
+    .sec-book{
+        padding-top: 40%;
+    }
+    .sec-book-1{
+        .row{
+            flex-direction: column;
+        }
+    }
+    .sec-about{
+        padding-top: 40%;
+    }
+    .sec-contact{
+        padding-top: 40%;
+    }
+    .sec-TandC{
+        padding-top: 40%;
+    }
+    .sec-SoftCopy{
+        padding-top: 40%;
+    }
+    .form-inp{
+        width: 100%;
+    }
+    .input-group{
+        min-width: 70vw;
+    }
+    .SoftCopy-Book{
+        min-width: 30vw;
+        max-height: 30vh;
+        position: relative;
+        left: -10%;
+    }
+    .account-menu{
+        ul{
+            display: flex;
+        }
+    }
+    .sec-Account{
+        padding-top: 40%;
     }
 }

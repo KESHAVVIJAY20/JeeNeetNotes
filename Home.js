@@ -182,6 +182,32 @@ $(document).ready(function(){
         $(".sec-TandC").hide();
         $(".sec-SoftCopy").hide();
         $(".sec-Account").show();
+        $("#Mysubscribe").hide();
+        $("#myacc").show();
+    });
+  });
+$(document).ready(function(){
+    $("#subscribe").click(function(){
+        $(".sec-book").hide();
+        $(".main").hide();
+        $(".sec-about").hide();
+        $(".sec-contact").hide();
+        $(".sec-TandC").hide();
+        $(".sec-SoftCopy").hide();
+        $(".sec-Account").show();
+        $("#myacc").hide();
+    });
+  });
+$(document).ready(function(){
+    $("#MyAccount").click(function(){
+        $("#myacc").toggle();
+        $("#Mysubscribe").hide();
+    });
+  });
+$(document).ready(function(){
+  $("#MySubscription").click(function(){
+    $("#Mysubscribe").toggle();
+    $("#myacc").hide();
     });
   });
 

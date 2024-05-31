@@ -144,13 +144,14 @@ body::-webkit-scrollbar{
     margin-bottom: 20%;
     ul{
         /* box-shadow: 2px 5px 20px rgba(35, 65, 35, 0.3); */
-        float: left;
-        width: 20%;
-        padding-left: 0 ;
+        /* float: right; */
+        width: 40%;
+        margin-left: 40% ;
     }
     li{
         list-style-type: none;
         padding: 10px;
+        text-align: start;
         /* box-shadow: 2px 5px 20px rgba(35, 65, 35, 0.3); */
         
     }
@@ -158,6 +159,32 @@ body::-webkit-scrollbar{
         background: linear-gradient(to right, rgb(210, 111, 111),red);
         color: white;
     }
+}
+.footer-ul{
+    li:hover{
+        color: black;
+    }
+}
+.account-menu{
+    li{
+        cursor: pointer;
+    }
+}
+#myacc{
+    display: none;
+}
+#mysubscribe{
+    display: none;
+}
+table {
+    th{
+        border: 2px solid rgba(128, 128, 128, 0.347);
+        border-collapse: collapse;
+      }
+      td{
+        border: 2px solid rgba(128, 128, 128, 0.38);
+        border-collapse: collapse;
+      }
 }
 @media only screen and (max-width:430px)and (max-height:932px){
     .section-1{

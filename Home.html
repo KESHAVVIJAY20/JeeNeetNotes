@@ -40,8 +40,19 @@
                         </div>
                     </form>
                 </div>
-                <div class="col text-end account">
-                    <a href="./Login.html"><img src="svg/Account.svg" alt=""></a>
+                <div class="col text-end account dropdown">
+                    <!-- <a href="./Login.html"><img class="dropbtn" src="svg/Account.svg" alt=""></a> -->
+                    <img class="dropbtn" src="svg/Account.svg" alt=""><br>
+                    <div class="dropdown-content text-end">
+                        <!-- <a href="#">link 1</a>
+                        <a href="#">link 2</a>
+                        <a href="#">link 3</a> -->
+                        <ul class="bg-danger rounded text-end ">
+                            <li class="bg-secondary text-light pe-2 text-end" id="link-1">My Account</li>
+                            <li class="bg-secondary text-light pe-2" id="link-2">My Subscription</li>
+                            <a href="./Login.html" class="text-light"><li class="bg-secondary pe-2">Log Out</li></a>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -624,7 +635,7 @@
         </div>
     </section>
     <section class="container-fluid"><hr></section>
-    <footer class="container-fluid">
+    <footer class="container-fluid ps-5">
             <div class="row">
                 <div class="col">
                     <img src="svg/Book.svg" alt=""><b><i>   JeeNeetStore</i></b><br><br>
@@ -668,9 +679,9 @@
                     </div>
                 </div>
             </div>
-            <hr>
-            <p>© 2022 All Rights Reserved by JEE NEET STORE</p>
-    </footer>
+        </footer>
+        <div class="container-fluid"><hr></div>
+        <p class="ps-5">© 2022 All Rights Reserved by JEE NEET STORE</p>
 
     <!-- <div class="card text-center">
         <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="John" style="width:100%">

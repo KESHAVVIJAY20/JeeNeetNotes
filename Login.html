@@ -15,13 +15,22 @@
             <h1 class="text-center login">Sign in</h1>
             <form action="#" class="p-5 pt-3">
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" validate>
                     <label for="floatingInput">Email address</label>
                   </div>
-                  <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <div class="form-floating d-flex">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
                     <label for="floatingPassword">Password</label>
+                    <!-- <div class="form-check pt-2 ms-2">
+                      <input class="form-check-input" type="checkbox" onclick="Show()" value="" id="checkbox">
+                      <label class="form-check-label Show" for="flexCheckDefault">
+                       Show
+                      </label>
+                    </div> -->
+                    <img class="eye-icon" style="position: absolute; left: 95%;top: 40%;" onclick="Show()" src="svg/eye-open.svg" alt="">
+                    <img class="eye-icon" style="position: absolute; left: 95%;top: 40%; display: none;" onclick="hide()" class="eye-hide" src="svg/eye-close.svg" alt="">
                   </div>
+
                   <div class="row">
                     <div class="col form-check pt-2 ms-2">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -30,7 +39,7 @@
                         </label>
                       </div>
                       <div class=" col pt-2 text-end">
-                        <a href="#" class="text-decoration-none"><p>Forgot Password ?</p></a>
+                        <a href="#" class="text-decoration-none"><p class="forgot-passwd">Forgot Password ?</p></a>
                       </div>
                   </div>
                   <div class="text-center">
@@ -40,6 +49,7 @@
             </form>
         </div>
     </div>
+    <script src="Home.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

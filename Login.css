@@ -43,4 +43,11 @@
     .login{
         margin-top: 20%;
     }
+    .eye-icon{
+        position: absolute;
+        margin-left: -5%;
+    }
+    .forgot-passwd{
+        margin-left: -10%;
+    }
 }

@@ -210,4 +210,76 @@ $(document).ready(function(){
     $("#myacc").hide();
     });
   });
+$(document).ready(function(){
+  $("#link-1").click(function(){
+    $(".sec-book").hide();
+        $(".main").hide();
+        $(".sec-about").hide();
+        $(".sec-contact").hide();
+        $(".sec-TandC").hide();
+        $(".sec-SoftCopy").hide();
+        $(".sec-Account").show();
+        $("#myacc").show();
+    });
+  $("#link-2").click(function(){
+    $(".sec-book").hide();
+        $(".main").hide();
+        $(".sec-about").hide();
+        $(".sec-contact").hide();
+        $(".sec-TandC").hide();
+        $(".sec-SoftCopy").hide();
+        $(".sec-Account").show();
+        $("#myacc").hide();
+    });
+  });
+
+  // // show password
+  function Show() {
+    var x = document.getElementById("password");
+    var y = document.getElementById('Confirm-password')
+    var eyeClose = document.querySelector('.eye-hide')
+    if (x.type === "password" || y.type === 'password') {
+      x.type = "text";
+      eyeClose.style.display='block';
+    } else {
+      x.type = "password";
+    }
+  }
+  function hide() {
+    var x = document.getElementById("password");
+    var y = document.getElementById('Confirm-password')
+    var eyeClose = document.querySelector('.eye-hide')
+    if (x.type === "text") {
+      x.type = "password";
+      eyeClose.style.display='none';
+    } else if (y.type === 'password'){
+      y.type = "password";
+      eyeClose.style.display='none';
+    }else {
+      x.type = "text";
+    }
+  }
+
+  function Same(){
+    var submit = document.getElementById('submit');
+    var password = document.getElementById('password');
+    var confirmPassword = document.getElementById('Confirmpassword');
+    var samePasswd = document.getElementById('samePasswd');
+    if (password.innerHTML != confirmPassword.innerHTML){
+      samePasswd.style.display='block';
+    }
+    else if (password.innerText === confirmPassword.innerText){
+      samePasswd.style.display='none';
+    }
+  }
+  // $(document).ready(function(){
+  //   $(".submit").click(function(){
+  //     var $passwd = $('#password');
+  //     var $Confirmpasswd = $('#Confirm-password');
+  //     var $samePass = $('#samePasswd')
+  //     if ( $passwd != $Confirmpasswd){
+  //       $samePass.show();
+  //     }
+  //   });
+  // });
 

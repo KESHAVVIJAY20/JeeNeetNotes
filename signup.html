@@ -19,17 +19,20 @@
                     <label for="floatingInput">Full Name</label>
                   </div>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Mobile Number" required>
+                    <input type="tel" class="form-control" id="floatingInput" placeholder="Mobile Number" required>
                     <label for="floatingInput">Mobile Number</label>
                   </div>
-                  <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                  <div class="form-floating mb-3 d-flex">
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
                     <label for="floatingPassword">Password</label>
+                    <img class="eye-icon" style="position: absolute; left: 95%;top: 40%;" onclick="Show()" src="svg/eye-open.svg" alt="">
+                    <img class="eye-icon" style="position: absolute; left: 95%;top: 40%; display: none;" onclick="hide()" class="eye-hide" src="svg/eye-close.svg" alt="">
                   </div>
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Confirm password" required>
+                <div class="form-floating d-flex">
+                    <input type="password" class="form-control" id="Confirm-password" placeholder="Confirm password" required>
                     <label for="floatingInput">Confirm Password</label>
                   </div>
+                  <p id="samePasswd">Should Be same as password</p>
                   <div class="row">
                     <div class="col form-check pt-2 ms-2">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -43,12 +46,13 @@
                   </div>
                   <br>
                   <div class="text-center">
-                    <button class="btn submit text-light ps-5 pe-5 fs-3" style="background-color: #d56b6b;">Submit</button><br><br>
+                    <button class="btn submit text-light ps-5 pe-5 fs-3" onclick="Same()" style="background-color: #d56b6b;"><a href="./Login.html" class="text-decoration-none text-light">Submit</a></button><br><br>
                     <p>Already Have an Account?<a href="./Login.html" class="text-decoration-none text-dark"><b class="register"> Login</b></a></p>
                   </div>
             </form>
         </div>
     </div>
+    <script src="Home.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

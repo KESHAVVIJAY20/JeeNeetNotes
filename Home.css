@@ -186,6 +186,23 @@ table {
         border-collapse: collapse;
       }
 }
+.dropdown-content{
+    display: none;
+    ul{
+        cursor: pointer;
+    }
+    li{
+        list-style-type: none;
+        /* background-color: aqua; */
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
 @media only screen and (max-width:430px)and (max-height:932px){
     .section-1{
         flex-direction: column;
@@ -254,9 +271,23 @@ table {
     .account-menu{
         ul{
             display: flex;
+            position: relative;
+            left: -45%;
+            li{
+                max-width: 40vw;
+                min-width: 30vw;
+                font-size: smaller;
+                margin-left: 10%;
+                margin-right: -10%;
+            }
         }
+
     }
     .sec-Account{
         padding-top: 40%;
+    }
+    .dropdown-content{
+        max-width: 36vw;
+        float: inline-end;
     }
 }
